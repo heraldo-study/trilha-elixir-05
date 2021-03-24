@@ -1,0 +1,18 @@
+GET http://localhost:4000/api/meals/ HTTP/1.1
+
+###
+
+GET http://localhost:4000/api/meals/7572b7fd-31ad-4429-9fa0-171f85a204e9 HTTP/1.1
+
+###
+
+POST http://localhost:4000/api/meals HTTP/1.1
+content-type: application/json
+
+{
+    "meal": {
+        "descricao": "café da manhã",
+        "data": "{{$localDatetime iso8601}}",
+        "calorias": 300
+    }
+}
